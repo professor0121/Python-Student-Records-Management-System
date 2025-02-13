@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'records',  # 👈 Add this line if missing
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

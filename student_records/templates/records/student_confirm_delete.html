@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>{% block title %}Student Form{% endblock %}</title>
+</head>
+<body>
+ <h1>{% if form.instance.pk %}Edit{% else %}Create{% endif %} Student</h1>
+ <form method="POST">
+ {% csrf_token %}
+ {{ form.as_p }}
+ <button type="submit">Save</button>
+ </form>
+ <a href="{% url 'student_list' %}">Back to Student List</a>
+</body>
+</html>
