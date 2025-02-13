@@ -28,4 +28,4 @@ MaxValueValidator(100)])
  def __str__(self):
   return f"{self.student.first_name} - {self.subject.name}"
  class Meta:
-  unique_together = ['student', 'subject']
+  unique_together = ['student', 'subject']  
